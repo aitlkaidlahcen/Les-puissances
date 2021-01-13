@@ -1,0 +1,177 @@
+\documentclass[a4paper,12pt,landscape,twocolumn]{report}
+\usepackage[hmargin=1cm,vmargin=1.5cm]{geometry}
+\renewcommand{\thesection}{\Roman{section}}
+%\renewcommand{\thesubsubsection}{\alpha{subsubsection}}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenx}
+
+\usepackage[french]{babel} 
+% long tableau
+
+\usepackage{supertabular}
+
+\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+
+\usepackage{enumerate}
+
+\usepackage{array}
+\usepackage{tcolorbox}
+
+\usepackage{xlop}
+
+\usepackage[standard]{ntheorem}
+\usepackage{array}
+\usepackage{color}
+\usepackage{parcolumns}
+\usepackage{multicol}
+\newcommand{\ex}[1]{%
+	
+	\fbox{{\resizebox{1in}{!}{\textbf{Exercice:\rotatebox{15}{#1}\newline }}}}
+	
+}
+\newcommand{\app}[1]{%
+	
+	\fbox{{\resizebox{1in}{!}{\textbf{Application:\rotatebox{15}{#1}\newline }}}}
+	
+}
+\newcommand{\acdia}[1]{
+	\underline{\textbf{Activité diagnostique:#1}}\\}
+\newcommand{\acpre}[1]{
+	\underline{\textbf{Activité préliminaire:#1}}\\}
+\newcommand{\acdec}[1]{\fbox{\underline{\textbf{Activité de découverte:#1}}}\\}
+
+\begin{document}
+	\fbox{\textbf{\underline{Puissances}}}
+		\section{La puissance d’un nombre rationnel :.}
+	
+	\acpre{1}
+	\begin{enumerate}
+		\item  Calculer: $2+2+2+2=\ldots ;\qquad2\times 2 \times 2 \times 2=\ldots$
+		\item Ecrire sous forme d'une puissance: $ 2\times 2 \times 2 \times 2=\ldots;  $ 
+		\item Ecrire sous forme d'un prduit: $a^n = \dotfill$
+	\end{enumerate}
+\begin{tcolorbox}[colframe =gray,
+	% colback = orange!50,boxrule = 2pt, arc = 6pt,
+	title = {Définition: }, coltitle= black]
+	a est un rationnel et n un entier naturel non nul \\
+	$$a^n  =a \times a ........\times a\quad (n facteurs)$$
+	$a$ est  la base  et $n$ l'exposant de la puissance
+\end{tcolorbox}
+
+	\app{1}
+	\begin{enumerate}
+		\item Ecrire sous forme d'une puissance:\\ $ (-5)\times (-5) \times (-5) \times (-5)=\ldots; \quad (\frac{2}{5})\times (\frac{2}{5}) \times (\frac{2}{5})=\ldots; \quad  $ 
+		\item Ecrire sous forme d'un prduit puis calculer :\\ $(-2)^5 ;\qquad (\frac{-7}{3})^3 ;\qquad (\frac{-2}{3})^3 ; \qquad -9^2 $
+	\end{enumerate}
+	\acdec{1}
+	\begin{enumerate}
+		\item Ecrire sous forme d'un prduit puis sous forme d'une puissance :\\ $(\frac{-1}{3})^{3}\times (\frac{-1}{3})^{4}=\dotfill $
+		\item Déduire: Si $a$ un nombre rationnel alors, $ a^n \times a^m =a^{\ldots} $
+		\item En utilisant l'associativité de la multiplication sur les nombres rationnels, écrire sous forme d'un prduit puis sous forme d'une puissance :\\ $ (\frac{-1}{3})^{3}\times (\frac{6}{7})^{3}=\dotfill $
+		\item Déduire: Si $a$ et $b$ deux nombres rationnels alors, $ a^n \times b^n =\ldots $
+		\item  Complèter:\\ $\frac{(-1)3}{7^3}= \frac{(-1)\times .............}{7\times .............}=\frac{-1}{7}\times \frac{\ldots}{\ldots}\times.......= \ldots$
+		\item Déduire: Si $a$ et $b$ deux nombres rationnels  ($b\neq0)$ alors,\quad$ \frac{a^n}{b^n}=\ldots$
+		\item Montrer que : $\quad(a^n)^m =a^{n\times m} $
+		\item Montrer que : $ \frac{a^n}{a^m}=a^{n-m}$ 
+	\end{enumerate}
+
+\subsection{Propriétés:}
+\begin{tcolorbox}[colframe =gray,
+	% colback = orange!50,boxrule = 2pt, arc = 6pt,
+	title = {Propriétés: }, coltitle= black]
+	$a$ et $b$ deux  nombre rationnels non nul. m et n deux entiers naturels 
+	\begin{itemize}
+		\item  	Produit de deux puissances de même base: $a^n \times a^m =a^{n+m} $
+		\item 	Quotient de deux puissances de même base: $\frac{a^n}{a^m}=a^{n-m}$
+    	\item 	Quotient de deux puissances de même exposant: $\frac{a^n}{b^n}=(\frac{a}{b})^{n}$
+		\item  	Produit de deux puissances de même exposant: $a^n \times b^n=(ab)^n$
+		\item  	Puissance d’une puissance :$(a^n)^m =a^{nm} $
+	\end{itemize}
+\end{tcolorbox}
+\subsection{Cas particuliers}
+\fbox{Si a est un nombre rationnel non nul alors :\quad
+	$a^0  =1$ \quad et \quad $a^1  =a$
+}
+\subsection{Puissance d’exposant négatif }
+\fbox{a est un nombre rationnel non nul et n un entier naturel\qquad $a^{-n}=\frac{1}{a^{n}}$}
+
+\subsection{Puissance de $10$}
+\begin{tcolorbox}[colframe =gray,
+	% colback = orange!50,boxrule = 2pt, arc = 6pt,
+	title = {Propriété: }, coltitle= black]
+	$n$ un nombre entier naturel \\
+	$10^n =10 .....0 \quad$ ($n$ des zéro) \qquad; \qquad $10^{-n} =0,0 .....01 $\quad ($n$ des zéro) 
+	
+\end{tcolorbox}
+
+	\ex{1}
+	Ecrire sous forme d'une puissance\\
+	$ (-0,4)^{5} \times (-0,4)^{16} \quad ; \quad  (\frac{10}{13})^{2020}\times (\frac{10}{13})^{-2019}
+	\quad ; \quad  (\frac{-8}{13})^{7}\times (\frac{3}{2})^{7}  \quad ; \quad \\
+	(-0,4)^{5} \times (-5)^{5} \quad ; \quad \frac{(6^5)^6}{(2^{15})^2} \quad ; \quad [(2^3)^4]^5 \quad ; \quad  2^7 + 2^7
+	\quad ; \quad 16 \quad ; \quad(-27)  \\ (\frac{10^{2020}}{13^{2020}})\times (\frac{1}{13})^{-2019}\quad ; \quad
+	(8^7)\times (-11)^{15} \times \frac{(-11)^{6}}{22^{21}}\quad ; \quad   (4^7)^{-9}\times 2^{-63} -(8)^{-21}
+	$
+	\ex{2}
+	Calculer : $(7^2)^{-1} \quad;\quad 2^{-5} \quad;\quad 10^{-3}\quad;\quad 10^{-6}\quad;\quad [(\frac{-5}{3})^{3}]^{-1} \quad;\quad(\frac{1}{6})^{-2}$\\
+	$\Rightarrow a^{-n}=\ldots$
+	
+	\acdec{2}
+	1) Ecrire sous forme d'un produit puis dire si la puissance est positive ou négative \qquad
+	$(-\frac{1}{2})^2 \quad;\quad (-\frac{1}{2})^3 \quad;\quad (-\frac{1}{2})^4 \quad;\quad(-\frac{1}{2})^7 \quad;\quad$\\
+	2) Complèter: \\
+	- La puissance d'un rationnel est positive si la base est ........ ou si l'exposant est ......\\
+	- La puissance d'un rationnel est négative si la base est ........ et si l'exposant est ......
+	
+	\section{Signe d’une puissance de base négative :}
+	\begin{tcolorbox}[colframe =gray,
+		% colback = orange!50,boxrule = 2pt, arc = 6pt,
+		title = {Propriété: }, coltitle= black]
+		Une puissance de base négative est de signe :\\
+		\textit{\underline{Positif}} : si l’exposant est un nombre est un pair\\
+		\textit{\underline{Négatif}} : si l’exposant est un nombre impair
+	\end{tcolorbox}
+	\ex{3}
+	1) Déterminer le signe des puissances suivantes: $(\frac{-33}{-105})^{111} ; \quad (\frac{-33}{105})^{77}$\\
+	2) Etudier le signe de $ a^n$ sachant que $a$ un nombre rationnel négatif et $n$ un nombre entier non nul\\
+	\acdec{3}
+	1) complèter par une puissance de $10$\\
+	\begin{tabular}{l|l}
+		$45=4,5\times ........$ & $2345=2,345\times ........$\\
+		$-6754800087=-6,754800087\times ........$ & $0,0032=3,2\times ........$\\
+		$-0,00000071035=-7,1035\times ........$ & $0,00000801=8,01\times ........$\\
+	\end{tabular} 
+	$\Rightarrow$ Ces écritures s'appellent  des écritures scientifiques
+	2) Complèter \\
+	- L'ordre de grandeur de $ 6,678\times 10^{9}$ est $  10^{10}$\\
+	- L'ordre de grandeur de $ 3,476\times 10^{-13}$ est ................\\
+	- L'ordre de grandeur de $ 1,983\times 10^{9}$ est ................\\
+	- L'ordre de grandeur de $ 5,3279\times 10^{32}$ est ................\\
+	
+\section{	L’écriture scientifique d’un nombre décimal relatif :}
+
+\begin{tcolorbox}[colframe =gray,
+	% colback = orange!50,boxrule = 2pt, arc = 6pt,
+	title = {Propriété: }, coltitle= black]
+ $x$ est un nombre décimal relatif et $a$ un nombre décimal et $n$ un entier naturel.\\
+Toutes écritures sous forme $x=a\times 10^n$  et  $x=-a\times 10^n$ est appelée écriture scientifique de nombre  $x$ tels que : $1\leq a<10$  
+\end{tcolorbox}
+	
+	
+	\ex{4}
+	1)Donner l'écriture scintifique et l'ordre de grandeur de chaque nombre\\
+	$2020 \quad ;\quad 450,32 \times 10^{51} \quad ;\quad 5005 \times 10^{-9}
+	\quad ;\quad\\ 0,001894 \times 10^{-18} \quad ;\quad -0,0000000045032 \times 10^{37}
+	\quad ;\quad 7\times 10^{-5}\times 51\times 10^{9}$\\
+	2)Donner l'écriture Scientifique\\
+	$$\frac{33,50\times 10^{9} \times 2 \times10^{7} }{5\times 10^{12} } \quad;\quad \frac{4,2\times 10^{-9}\left(2^{5}\times 5^{5} \right)^{20} }{10^{7}\times 10^{8} } $$
+   3) Si $a$ un nombre rationnel non nul, montrer que $a^0 =1$
+\end{document}
